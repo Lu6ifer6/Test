@@ -451,7 +451,7 @@ body{
   }
   .hamburger {
     display: flex; 
-    height: auto;
+    height: 985px;
     position: relative;
     z-index: 50;
   }
