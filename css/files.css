@@ -156,6 +156,7 @@ body{
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
+/* Main Container */
 .files-nav-context {
     display: flex;
     flex-direction: column;
@@ -212,4 +213,80 @@ body{
   height: 40px;
   border: 1px solid #D7D7D7;
   border-radius: 20px;
+}
+
+/* File nav */
+.all-files {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 30px 30px 0px 30px;
+  gap: 24px;
+  
+}
+.allfiles-nav {
+  width: 100%;
+  max-width: 913px;
+  height: 410px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid var(--primary);
+  padding: 30px;
+  background-color: var(--white);
+}
+
+.available-storage {
+  width: 100%;
+  max-width: 349px;
+  height: 410px;
+  border: 1px solid var(--primary);
+  background-color: var(--white);
+}
+
+.files-nav1 {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  gap: 10px;
+}
+
+.files-nav2 {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: right;
+  
+}
+
+.files-nav2 .arrow-down {
+  width: 15px;
+}
+
+.files-nav1 .nav-file {
+  width: 100%;
+  max-width: 27px;
+}
+
+.file-img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+  border: 1px solid white;
+  box-shadow: 0px 8px 15px 0px #5051F914;
+
+}
+
+.files-nav1 h3,
+.files-nav2 h3 {
+  width: 100px;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
