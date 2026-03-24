@@ -162,9 +162,54 @@ body{
     background-color: var(--bg-color);
 }
 
-.files-context {
+.file-context {
+  display: flex;
+  flex-direction: column;
+}
+
+.files-text-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 40px 0px 30px;
+}
+
+.files-text h2 {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.files-button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn1 {
+  width: 200px;
+  height: 40px;
+  border: 1px solid var(--primary);
+  border-radius: 23px;
+  background-color: #5051F9;
+  color: var(--white);
+}
+
+.files-button button {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  cursor: pointer;
+
+}
+.btn2 {
+  width: 100px;
+  height: 40px;
+  border: 1px solid #D7D7D7;
+  border-radius: 20px;
 }
