@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="../css/settings.css">
+    <script defer src="../javascript/settings.js"></script>
+</head>
+<body>
+    <main class="settings">
+         <!-- Header -->
+
+    <!-- Side bar -->
+    <aside class="sidebar">
+      <div class="logo">
+        <img src="../img/logo.png" alt="Octom logo">
+      </div>
+
+      <!-- Menu List -->
+      <nav class="menu">
+        <a href=""><img src="../img/dashboard-icon.svg" alt="dashboard icon"></a>
+        <a href=""><img src="../img/timeline.svg" alt="timeline icon"></a>
+        <a href=""><img src="../img/task.svg" alt="task icon"></a>
+        <a href=""><img src="../img/settings.svg" alt="settings icon"></a>
+        <a href=""><img src="../img/messages.svg" alt="messages icon"></a>
+        <a href=""><img src="../img/folder.svg" alt="folder icon"></a>
+      </nav>
+    </aside>
+    <aside class="hamburger-menu">
+      <div class="hamburger">
+        <div class="hamburger-icon">
+          <a href=""><img src="../img/hamburger.svg" alt=""></a>
+        </div>
+         <div class="logo">
+        <img src="../img/logo.png" alt="Octom logo">
+      </div>
+
+      <!-- Menu List -->
+      <nav class="menu">
+        <a href=""><img src="../img/dashboard-icon.svg" alt="dashboard icon"></a>
+        <a href=""><img src="../img/timeline.svg" alt="timeline icon"></a>
+        <a href=""><img src="../img/task.svg" alt="task icon"></a>
+        <a href=""><img src="../img/settings.svg" alt="settings icon"></a>
+        <a href=""><img src="../img/messages.svg" alt="messages icon"></a>
+        <a href=""><img src="../img/folder.svg" alt="folder icon"></a>
+      </nav>
+      </div>
+    </aside>
+
+    <!-- Profile Bar -->
+    <div class="profile-bar">
+      <div class="search-icon">
+        <label for="text"></label>
+        <input type="text" placeholder="Search anything.. ">
+      </div>
+      <div class="profile-details">
+        <img src="../img/notification-icon.svg" alt="notification-icon">
+        <img src="../img/profile-avatar.svg" alt="Avatar">
+      </div>
+    </div>
+    <!-- SETTINGS MAIN CONTAINER -->
+    <section class="settings-container">
+        <div class="gradient-profilepic">
+            <div class="gradient-image">
+                <img src="../img/color-gradient.png" alt="">
+            </div>
+            <div class="profile-pic">
+                <img src="../img/profile-pic.svg" alt="">
+            </div>
+        </div>
+        <!-- Settings nav -->
+         <div class="settings-text-button">
+            <div class="settings-text">
+                <h2>Settings</h2>
+            </div>
+            <div class="settings-button">
+                <button>Cancel</button>
+                <button class="span">Save</button>
+            </div>
+         </div>
+         <!-- SETTINGS NAV DETAILS -->
+          <div class="settings-details">
+            <h4>My details</h4>
+            <h4>Profile</h4>
+            <h4>Password</h4>
+            <h4>Team</h4>
+            <h4>Plan</h4>
+            <h4>Billing</h4>
+            <h4>Email</h4>
+            <h4>Notifications</h4>
+          </div>
+
+          <!-- MY DETAILS -->
+          <div class="my-details">
+            <div class="name">
+              <div class="firstname">
+                <label for="firstname">First name</label>
+                <input type="text" placeholder="Vera">
+              </div>
+              <div class="lastname">
+                <label for="lastname">Last name</label>
+                <input type="text" name="Last Name" id="" placeholder="Lucifer">
+              </div>
+            </div>
+            <div class="break">
+              <span></span>
+            </div>
+            <div class="email">
+              <label for="Email">Email</label>
+              <input type="text" placeholder="lucifervera@morningstar.com">
+            </div>
+            <div class="break">
+              <span></span>
+            </div>
+            <div class="upload-container">
+          <input type="file" id="file-upload" class="upload-input" accept="image/svg+xml, image/png, image/jpeg, image/gif" />
+        <label for="file-upload" class="upload-dropzone">
+            <div class="upload-icon-wrapper">
+            <svg class="upload-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="17 8 12 3 7 8"></polyline>
+          <line x1="12" y1="3" x2="12" y2="15"></line>
+          </svg>
+          </div>
+            <p class="upload-primary-text">Click to upload or drag and drop</p>
+            <p class="upload-secondary-text">SVG, PNG, JPG or GIF (max, 800x400px)</p>
+        </label>
+            </div>
+            <div class="role">
+              <label for="text">Roles</label>
+              <input type="text" placeholder="Product designer">
+            </div>
+          </div>
+    </section>
+    </main>
+</body>
+</html>
