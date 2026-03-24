@@ -161,3 +161,10 @@ body{
     flex-direction: column;
     background-color: var(--bg-color);
 }
+
+.files-context {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
