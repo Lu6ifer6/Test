@@ -51,9 +51,6 @@ body{
   background-color: var(--sidebar-color);
 }
 
-.hamburger-icon {
-  padding-left: 35px;
-}
 
 .logo {
   width: 64px;
