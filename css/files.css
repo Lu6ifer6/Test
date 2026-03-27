@@ -769,7 +769,7 @@ body{
   .card1-img-text {
   width: 210px;
   height: 105px;
-  
+
   }
 
   .card-text h2 {
@@ -785,7 +785,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 100px;
+    margin-left: 95px;
   }
 
   .file-box {
