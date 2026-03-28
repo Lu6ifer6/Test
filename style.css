@@ -718,3 +718,156 @@ body {
     color: var(--text-muted);
 }
 
+
+
+@media screen and (max-width: 768px) {
+    
+    /* Global Padding Reduction for Mobile */
+    .features-section, 
+    .features-section2, 
+    .reviews-section, 
+    .site-footer {
+        padding: 60px 20px;
+    }
+
+    /* --- 1. Navbar & Hero Section --- */
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .nav-links ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero-text-container {
+        margin-bottom: 2rem;
+    }
+
+    .hero-text-container h1 {
+        font-size: 2.2rem; 
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+    }
+
+    .hero-mockup-container {
+        height: auto; 
+        padding: 0 15px;
+    }
+
+    /* --- 2. Features Section 1 (Image & Text Rows) --- */
+    .feature-row, 
+    .feature-row.reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+        margin-bottom: 80px;
+    }
+
+    .feature-row.reverse {
+        flex-direction: column-reverse; 
+    }
+
+    .feature-content, 
+    .feature-image-container {
+        max-width: 100%;
+    }
+
+    .feature-list li {
+        justify-content: center; 
+    }
+
+    /* Adjust the decorative background box so it doesn't break page width */
+    .image-bg-shape, 
+    .feature-row.reverse .image-bg-shape {
+        top: -10px;
+        bottom: -10px;
+        left: -10px;
+        right: -10px;
+    }
+
+    /* --- Features Section 2 (Grid Cards) --- */
+    .features-grid {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .features-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .bttn {
+        width: 100%;
+    }
+
+    /* --- 4. Customer Reviews Section --- */
+    .review-header h2 {
+        font-size: 2rem;
+    }
+
+    .review-card {
+        flex: 0 0 85vw; 
+        min-width: unset;
+    }
+
+    /* --- 5. Footer Section --- */
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 40px;
+    }
+
+    .footer-brand {
+        max-width: 100%;
+        text-align: center; 
+    }
+
+    .footer-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 15px;
+        text-align: center;
+    }
+
+    .social-icons {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .bottom-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .legal-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+/* To adjust the footer into single column and the hero-nav to vertical */
+/* on small size screen */
+@media screen and (max-width: 480px) {
+    
+    .footer-links-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
