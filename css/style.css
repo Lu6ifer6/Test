@@ -39,6 +39,7 @@ body{
   background-color: var(--sidebar-color);
 }
 
+
 .logo {
   width: 64px;
   height: 61px;
@@ -804,4 +805,211 @@ body{
   font-size: 13px;
   line-height: 100%;
   letter-spacing: 0%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  
+
+  body {
+    overflow-x: hidden;
+  }
+
+  /* --- Sidebar --- */
+  .sidebar {
+    display: none;
+  }
+
+  /* --- Top Profile Bar --- */
+  .profile-bar {
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .search-icon {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .search-icon input {
+    width: 100%; 
+    max-width: 400px;
+  }
+
+  .profile-details {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* --- Main Content Area --- */
+  .main-content {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 30px;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  /* Stat Cards */
+  .maincontent-card {
+    flex-direction: column; 
+    width: 100%;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    min-width: unset;
+  }
+
+  /* --- Task Graph Area --- */
+  .task-text {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .task-graph {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .task-graph img {
+    width: 100%;
+    height: auto; 
+    padding-left: 0;
+  }
+
+  /* --- Task Reminders Area --- */
+  .task-reminder {
+    width: 100%;
+  }
+
+  .reminder-1 {
+    width: 100%;
+    height: auto;
+    flex-direction: column; 
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .start-from, 
+  .search-project, 
+  .loading {
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-link-comment {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .reminder {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* --- Right Bar (Schedule & Messages) --- */
+  .right-bar {
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Schedule */
+  .schedule {
+    padding-top: 30px;
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .today-sch {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .project-call {
+    flex-direction: column;
+    padding-right: 0;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .call-log {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    flex-direction: column; 
+    gap: 20px;
+    align-items: center;
+  }
+
+  .log-menu {
+    justify-content: center;
+  }
+
+  .underline {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .underline span {
+    width: 100%;
+  }
+
+  /* Messages */
+  .messages {
+    padding-right: 0;
+    width: 100%;
+    align-items: center;
+  }
+
+  .message-list {
+    width: 100%;
+  }
+
+  .list-img-text {
+    flex-direction: column; 
+    text-align: center;
+    background-color: var(--white);
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .list-text p {
+    width: 100%;
+  }
+
+  /* --- New Task Area --- */
+  .task {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .create-new {
+    padding-right: 0;
+    width: 100%;
+  }
+
+  .create-new input {
+    width: 100%;
+  }
+
+  .collaborators {
+    padding-right: 0;
+    align-items: center;
+  }
+
+  .emoji-picker {
+    flex-wrap: wrap; 
+  }
 }
