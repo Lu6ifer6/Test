@@ -44,6 +44,7 @@ body{
   width: 64px;
   height: 61px;
   padding: 20px 15px 0px 15px;
+  cursor: pointer;
 }
 
 .menu {
@@ -64,7 +65,7 @@ body{
   background-color: #ffffff;
 }
 
-/* Hover Effect */
+
  .menu img:hover {
   opacity: 1;    
   background-color: #0f78e2;
@@ -72,7 +73,7 @@ body{
   padding: 0.5rem;
 }
 
-/* Active State (for the currently selected page) */
+
 .menu img.active {
   opacity: 1;
   background-color: #0a0af0;
@@ -130,25 +131,25 @@ body{
 }
 
 .profile-details img {
-  transition: all 0.3s ease; /* Smoothly animates the hover changes */
+  transition: all 0.3s ease; 
   display: block;
 }
 
-/* Specific hover for the notification icon */
+
 .profile-details img[alt="notification-icon"]:hover {
-  transform: translateY(-2px); /* Subtle lift effect */
-  filter: brightness(1.2);    /* Makes it pop a bit more */
+  transform: translateY(-2px);
+  filter: brightness(1.2);    
 }
 
-/* Specific hover for the avatar */
+
 .profile-details img[alt="Avatar"] {
-  border-radius: 50%;         /* Ensures it's circular */
+  border-radius: 50%;         
   border: 2px solid transparent;
 }
 
 .profile-details img[alt="Avatar"]:hover {
-  transform: scale(1.1);      /* Slight zoom in */
-  border-color: #e9ec30;      /* Adds a ring (matching your UI theme) */
+  transform: scale(1.1);      
+  border-color: #e9ec30;      
   box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 /* RIGHT BAR */
