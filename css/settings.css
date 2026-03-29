@@ -461,7 +461,7 @@ body{
   .search-icon {
     padding-left: 0;
     width: 100%;
-    order: 3; /* Pushes the search bar below the profile details */
+    order: 3; 
     margin-top: 10px;
   }
 

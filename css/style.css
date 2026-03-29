@@ -39,6 +39,16 @@ body{
   background-color: var(--sidebar-color);
 }
 
+.hamburger {
+  height: 980px;
+  display: none;
+  flex-direction: column;
+  justify-content: start;
+  padding: 20px 0px;
+  position: absolute;
+  overflow: hidden;
+  background-color: var(--sidebar-color);
+}
 
 .logo {
   width: 64px;

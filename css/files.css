@@ -234,6 +234,17 @@ body{
   background-color: var(--white);
 }
 
+.nav-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: baseline;
+  padding: 0 10px 0px 20px;
+  
+}
+
 .available-storage {
   width: 100%;
   max-width: 349px;
@@ -246,34 +257,33 @@ body{
 .files-nav1 {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 10px;
 }
 
 .files-nav2 {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
-  justify-content: space-evenly;
-  
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.files-nav2 .arrow-down {
-  width: 100%;
-  max-width: 15px;
+.arrows-down {
+  width: 15px;
 }
 
 .files-nav1 .nav-file {
-  width: 100%;
-  max-width: 27px;
+  width: 27px;
 }
 
 .file-img {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   gap: 5px;
   border: 1px solid white;
@@ -283,7 +293,6 @@ body{
 
 .files-nav1 h3,
 .files-nav2 h3 {
-  width: 100px;
   font-weight: 700;
   font-style: Bold;
   font-size: 14px;
@@ -639,12 +648,6 @@ body{
 }
 
 
-
-
-
-
-
-
 /* Activity Chart */
 .chart {
   border: 1px solid var(--white);
@@ -674,12 +677,9 @@ body{
 
 
 @media screen and (max-width: 768px) {
-  .files-container {
-    width: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+
+  body {
+    overflow-x: hidden;
   }
 
   
@@ -701,65 +701,84 @@ body{
   }
 
   .profile-bar {
-    display: none; 
-  }
-
-  .search-icon {
-    padding-left: 0;
     width: 100%;
-    order: 3; /* Pushes the search bar below the profile details */
-    margin-top: 10px;
+    padding: 20px;
+    gap: 20px;
+    flex-direction: column-reverse; /* Avatar on top, search below */
+    align-items: stretch;
+    justify-content: center;
   }
 
+   .search-icon {
+    width: 100%;
+    padding-left: 0; /* Remove the 478px desktop padding */
+  }
+  
   .search-icon input {
     width: 100%;
-    max-width: 100%;
+    max-width: 90%;
   }
 
-  .file-text-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    padding: 30px;
+  .profile-details {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .files-text-button {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 20px 0;
+    gap: 15px;
   }
 
   .files-button {
-    font-weight: 700;
-    font-style: bold;
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    cursor: pointer;
-  }
-  .btn1 {
     width: 100%;
-    max-width: 150px;
-    height: 40px;
-    border: 1px solid var(--primary);
-    border-radius: 23px;
-    background-color: #5051F9;
-    color: var(--white);
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .btn1, .btn2 {
+    width: 48%; /* Buttons sit side-by-side */
+    text-align: center;
   }
 
   .all-files {
-    display: flex;
     flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .allfiles-nav {
     width: 100%;
-    max-width: 600px;
+    max-width: 100%;
     height: auto;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .nav-btn {
+    padding: 0px 10px;
+  }
+
+  .files-nav1, .files-nav2 {
+    /* width: 100%;
+    justify-content: space-between;
+    gap: 100px; */
   }
 
   .files-card {
-    display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    align-items: center;
-    padding: 37px 20px 0px 15px;
+    width: 100%;
+    position: relative;
+    flex: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 0 0 0;
+    gap: 15px;
   }
 
   .card1-img-text {
-  width: 210px;
-  height: 105px;
-
+    width: 100%;
+    /* height: auto; */
   }
 
   .card-text h2 {
@@ -771,21 +790,78 @@ body{
   }
 
   .available-storage {
-    display: flex;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+
+  .storage-records {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .memory-storage {
+    width: calc(100%-40px);
+    margin: 20px auto;
+  }
+  
+
+
+  .file-box {
+    flex-direction: column;
+    margin: 0 20px 30px 20px;
+    gap: 20px;
+  }
+
+  .recent-file {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .recent-file-title {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px 15px;
+    gap: 10px;
+  }
+
+  .file {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .size{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-left: 95px;
   }
 
-  .file-box {
-    display: flex;
+  .modified {
     flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    width: 500px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
   }
 
+  .members-pic {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .member-img {
+    width: 100%;
+    max-width: 126px;
+  }
+  
   .recent-file-title h2 {
     font-size: 14px;
   }
@@ -798,6 +874,7 @@ body{
   .table-head h3 {
     font-size: 12px;
   }
+
 
   .member-files {
     display: flex;
