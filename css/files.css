@@ -695,7 +695,7 @@ body{
   .hamburger {
     display: flex;
     width: 80px; 
-    height: 985px;
+    height: 1980px;
     position: relative;
     z-index: 50;
   }
@@ -797,6 +797,11 @@ body{
     align-items: center;
   }
 
+  .records-img-text {
+    align-items: center;
+    max-width: 100%;
+  }
+
   .storage-records {
     width: 100%;
     max-width: 100%;
@@ -804,7 +809,7 @@ body{
   }
 
   .memory-storage {
-    width: calc(100%-40px);
+    width: calc(100% - 40px);
     margin: 20px auto;
   }
   
@@ -824,10 +829,10 @@ body{
   }
 
   .recent-file-title {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
     margin: 20px 15px;
-    gap: 10px;
   }
 
   .file {
@@ -896,4 +901,21 @@ body{
     display: none;
   }
 
+  .chart {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .activity-text h2 {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .chart-img {
+    height: auto;
+    margin: 20px auto;
+    display: block;
+  }
 }
