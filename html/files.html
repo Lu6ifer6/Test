@@ -3,320 +3,300 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Files</title>
+    <title>Octom. File Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/files.css">
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
 </head>
 <body>
-    <main class="files-container">
+    <div class="app-container">
+        <div class="overlay" id="overlay"></div>
 
-    <!-- Side bar -->
-    <aside class="sidebar">
-      <div class="logo">
-        <a href="../index.html"><img src="../img/logo.png" alt="Octom logo"></a>
-      </div>
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <div class="logo-icon"><i class='bx bxl-codepen'></i></div>
+                <span>OCTOM.</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#" class="nav-item"><i class='bx bx-grid-alt'></i></a>
+                <a href="#" class="nav-item"><i class='bx bx-pin'></i></a>
+                <a href="#" class="nav-item"><i class='bx bx-book-open'></i></a>
+                <a href="#" class="nav-item"><i class='bx bx-cog'></i></a>
+                <a href="#" class="nav-item"><i class='bx bx-send'></i></a>
+                <a href="#" class="nav-item active"><i class='bx bx-folder'></i></a>
+            </nav>
+        </aside>
 
-      <!-- Menu List -->
-      <nav class="menu">
-        <a href="./dashboard.html"><img src="../img/dashboard-icon.svg" alt="dashboard icon"></a>
-        <a href=""><img src="../img/timeline.svg" alt="timeline icon"></a>
-        <a href=""><img src="../img/task.svg" alt="task icon"></a>
-        <a href="./settings.html"><img src="../img/settings.svg" alt="settings icon"></a>
-        <a href=""><img src="../img/messages.svg" alt="messages icon"></a>
-        <a href="./files.html"><img src="../img/folder.svg" alt="folder icon"></a>
-      </nav>
-    </aside>
-    <!-- HAMBURGER MENU -->
-    <aside class="hamburger-menu">
-      <div class="hamburger">
-         <div class="logo">
-        <img src="../img/logo.png" alt="Octom logo">
-      </div>
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="hamburger" id="hamburger">
+                        <i class='bx bx-menu'></i>
+                    </button>
+                    <div class="search-bar">
+                        <i class='bx bx-search'></i>
+                        <input type="text" placeholder="Search anything...">
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div class="notification">
+                        <i class='bx bx-bell'></i>
+                        <span class="badge">1</span>
+                    </div>
+                    <div class="user-profile">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="User profile">
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                </div>
+            </header>
 
-      <!-- Menu List -->
-      <nav class="menu">
-        <a href="./dashboard.html"><img src="../img/dashboard-icon.svg" alt="dashboard icon"></a>
-        <a href=""><img src="../img/timeline.svg" alt="timeline icon"></a>
-        <a href=""><img src="../img/task.svg" alt="task icon"></a>
-        <a href="./settings.html"><img src="../img/settings.svg" alt="settings icon"></a>
-        <a href=""><img src="../img/messages.svg" alt="messages icon"></a>
-        <a href="./files.html"><img src="../img/folder.svg" alt="folder icon"></a>
-      </nav>
-      </div>
-    </aside>
+            <div class="dashboard-grid">
+                
+                <div class="left-column">
+                    <div class="section-header">
+                        <h1>Files</h1>
+                        <div class="header-actions">
+                            <button class="btn btn-primary">+ Create New Folder</button>
+                            <button class="btn btn-outline"><i class='bx bx-link'></i> Upload</button>
+                        </div>
+                    </div>
 
-    <div class="files-nav-context">
-      <!-- Profile Bar -->
-      <div class="profile-bar">
-        <div class="search-icon">
-          <label for="text"></label>
-          <input type="text" placeholder="Search anything.. ">
-        </div>
-        <div class="profile-details">
-          <img src="../img/notification-icon.svg" alt="notification-icon">
-          <img src="../img/profile-avatar.svg" alt="Avatar">
-        </div>
-      </div>
-      <!-- FILE CONTEXT -->
-      <div class="file-context">
-        <div class="files-text-button">
-          <div class="files-text">
-            <h2>Files</h2>
-          </div>
-          <div class="files-button">
-            <button class="btn1">+Create New Folder</button>
-            <button class="btn2">Upload</button>
-          </div>
-        </div>
-        <!-- Main-content -->
-        <div class="all-files">
-          <div class="allfiles-nav">
-            <div class="nav-btn">
-              <div class="files-nav1">
-                <div class="file-img">
-                  <img src="../img/upload-file.svg" alt="" class="nav-file">
-                  <img src="../img/arrow-down.svg" alt="" class="arrow-down">
-                </div>
-                <h3>All files</h3>
-              </div>
-              <div class="files-nav2">
-                <h3>Show all</h3>
-                <img src="../img/arrow-down.svg" alt="" class="arrows-down">
-            </div>
-            </div>
+                    <div class="folders-container">
+                        <div class="folders-header">
+                            <div class="folder-title"><i class='bx bx-folder'></i> All Files</div>
+                            <div class="show-all">Show All <i class='bx bx-chevron-down'></i></div>
+                        </div>
+                        <div class="folders-grid">
+                            <div class="folder-card">
+                                <div class="card-top">
+                                    <div class="folder-icon blue"><i class='bx bxs-folder'></i></div>
+                                    <div class="avatars">
+                                        <div class="avatar-sm p-blue">A</div>
+                                        <div class="avatar-sm p-cyan">B</div>
+                                    </div>
+                                </div>
+                                <h3>Documents</h3>
+                                <p>24 files</p>
+                            </div>
+                            <div class="folder-card">
+                                <div class="card-top">
+                                    <div class="folder-icon purple"><i class='bx bxs-folder'></i></div>
+                                </div>
+                                <h3>Music</h3>
+                                <p>102 files</p>
+                            </div>
+                            <div class="folder-card">
+                                <div class="card-top">
+                                    <div class="folder-icon blue"><i class='bx bxs-folder'></i></div>
+                                    <div class="avatars">
+                                        <div class="avatar-sm p-blue">A</div>
+                                        <div class="avatar-sm p-cyan">B</div>
+                                    </div>
+                                </div>
+                                <h3>Work Project</h3>
+                                <p>84 files</p>
+                            </div>
+                            <div class="folder-card">
+                                <div class="card-top">
+                                    <div class="folder-icon yellow"><i class='bx bxs-folder'></i></div>
+                                    <div class="avatars">
+                                        <div class="avatar-sm p-purple">A</div>
+                                    </div>
+                                </div>
+                                <h3>Personal Media</h3>
+                                <p>2450 files</p>
+                            </div>
+                            <div class="folder-card">
+                                <div class="card-top">
+                                    <div class="folder-icon green"><i class='bx bxs-folder'></i></div>
+                                </div>
+                                <h3>Reddingo Backup</h3>
+                                <p>22 files</p>
+                            </div>
+                            <div class="folder-card">
+                                <div class="card-top">
+                                    <div class="folder-icon orange"><i class='bx bxs-folder'></i></div>
+                                    <div class="avatars">
+                                        <div class="avatar-sm p-cyan">B</div>
+                                    </div>
+                                </div>
+                                <h3>Root</h3>
+                                <p>105 files</p>
+                            </div>
+                        </div>
+                    </div>
 
-          <!-- File Card -->
-          <div class="files-card">
-            <div class="card1-img-text">
-              <div class="card-img">
-                <img src="../img/upload-file.svg" alt="">
-                <img src="../img/AB.svg" alt="">
-              </div>
-                <div class="card-text">
-                  <h2>Documents</h2>
-                  <p>24 files</p>
+                    <div class="recent-files">
+                        <div class="recent-header">
+                            <h2>Recent File</h2>
+                            <a href="#" class="view-all">View All</a>
+                        </div>
+                        <table class="recent-table">
+                            <thead>
+                                <tr>
+                                    <th>Name <i class='bx bx-up-arrow-alt'></i></th>
+                                    <th>Size <i class='bx bx-up-arrow-alt'></i></th>
+                                    <th>Last Modified <i class='bx bx-up-arrow-alt'></i></th>
+                                    <th>Members <i class='bx bx-up-arrow-alt'></i></th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><div class="file-name"><i class='bx bxs-file-doc yellow'></i> Proposal.docx</div></td>
+                                    <td>2.9 MB</td>
+                                    <td>Feb 25,2022</td>
+                                    <td>
+                                        <div class="member-group">
+                                            <img src="https://i.pravatar.cc/150?img=32" alt="m1">
+                                            <img src="https://i.pravatar.cc/150?img=12" alt="m2">
+                                            <img src="https://i.pravatar.cc/150?img=13" alt="m3">
+                                            <img src="https://i.pravatar.cc/150?img=14" alt="m4">
+                                        </div>
+                                    </td>
+                                    <td><i class='bx bx-dots-vertical-rounded'></i></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="file-name"><i class='bx bxs-image blue'></i> Background.jpg</div></td>
+                                    <td>3.5 MB</td>
+                                    <td>Feb 24,2022</td>
+                                    <td>
+                                        <div class="member-group">
+                                            <img src="https://i.pravatar.cc/150?img=32" alt="m1">
+                                            <img src="https://i.pravatar.cc/150?img=12" alt="m2">
+                                            <img src="https://i.pravatar.cc/150?img=13" alt="m3">
+                                        </div>
+                                    </td>
+                                    <td><i class='bx bx-dots-vertical-rounded'></i></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="file-name"><i class='bx bxl-figma pink'></i> Apex website.fig</div></td>
+                                    <td>23.5 MB</td>
+                                    <td>Feb 22,2022</td>
+                                    <td>
+                                        <div class="member-group">
+                                            <img src="https://i.pravatar.cc/150?img=32" alt="m1">
+                                            <img src="https://i.pravatar.cc/150?img=12" alt="m2">
+                                            <img src="https://i.pravatar.cc/150?img=13" alt="m3">
+                                            <img src="https://i.pravatar.cc/150?img=14" alt="m4">
+                                        </div>
+                                    </td>
+                                    <td><i class='bx bx-dots-vertical-rounded'></i></td>
+                                </tr>
+                                <tr>
+                                    <td><div class="file-name"><i class='bx bxl-adobe dark'></i> Illustration.ai</div></td>
+                                    <td>7.2 MB</td>
+                                    <td>Feb 20,2022</td>
+                                    <td>
+                                        <div class="member-group">
+                                            <img src="https://i.pravatar.cc/150?img=32" alt="m1">
+                                            <img src="https://i.pravatar.cc/150?img=12" alt="m2">
+                                            <img src="https://i.pravatar.cc/150?img=13" alt="m3">
+                                        </div>
+                                    </td>
+                                    <td><i class='bx bx-dots-vertical-rounded'></i></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
-            </div>
-            <div class="card1-img-text">
-              <div class="card-img">
-                <img src="../img/upload-file.svg" alt="">
-                <img src="../img/AB.svg" alt="">
-              </div>
-                <div class="card-text">
-                  <h2>Music</h2>
-                  <p>108 files</p>
-                </div>
-            </div>
-            <div class="card1-img-text">
-              <div class="card-img">
-                <img src="../img/upload-file.svg" alt="">
-                <img src="../img/AB.svg" alt="">
-              </div>
-                <div class="card-text">
-                  <h2>Work Projects</h2>
-                  <p>84 files</p>
-                </div>
-            </div>
-            <div class="card1-img-text">
-              <div class="card-img">
-                <img src="../img/upload-file.svg" alt="">
-                <img src="../img/AB.svg" alt="">
-              </div>
-                <div class="card-text">
-                  <h2>Personal Media</h2>
-                  <p>2450 files</p>
-                </div>
-            </div>
-            <div class="card1-img-text">
-              <div class="card-img">
-                <img src="../img/upload-file.svg" alt="">
-                <img src="../img/AB.svg" alt="">
-              </div>
-                <div class="card-text">
-                  <h2>Reddingo Backup</h2>
-                  <p>22 files</p>
-                </div>
-            </div>
-            <div class="card1-img-text">
-              <div class="card-img">
-                <img src="../img/upload-file.svg" alt="">
-                <img src="../img/AB.svg" alt="">
-              </div>
-                <div class="card-text">
-                  <h2>Root</h2>
-                  <p>105 files</p>
-                </div>
-            </div>
-          </div>
-        </div>
-        <!-- Right box -->
-        <div class="available-storage">
-          <div class="memory-storage">
-            <div class="storage-img-text">
-              <div class="storage-img">
-              <img src="../img/storage-icon.png" alt="">
-            </div>
-            <div class="storage-text">
-              <h3>Available storage</h3>
-              <p>130GB/512GB</p>
-            </div>
-            </div>
-          </div>
 
-          <!-- STORAGE RECORDS -->
-          <div class="storage-records">
-            <div class="records-img-text">
-              <div class="records">
-              <div class="record-img">
-                <img src="../img/media.svg" alt="">
-              </div>
-              <div class="record-text">
-                <div class="rec-text">
-                  <h3>Media</h3>
-                  <p>86GB</p>
-                </div>
-                <div class="text-img">
-                  <img src="../img/media-line.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="records">
-              <div class="record-img">
-                <img src="../img/documents.svg" alt="">
-              </div>
-              <div class="record-text">
-                <div class="rec-text">
-                  <h3>Documents</h3>
-                  <p>26GB</p>
-                </div>
-                <div class="text-img">
-                  <img src="../img/doc-line.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="records">
-              <div class="record-img">
-                <img src="../img/Music.svg" alt="">
-              </div>
-              <div class="record-text">
-                <div class="rec-text">
-                  <h3>Music</h3>
-                  <p>10GB</p>
-                </div>
-                <div class="text-img">
-                  <img src="../img/music-line.png" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="records">
-              <div class="record-img">
-                <img src="../img/other-files.svg" alt="">
-              </div>
-              <div class="record-text">
-                <div class="rec-text">
-                  <h3>Other files</h3>
-                  <p>18GB</p>
-                </div>
-                <div class="text-img">
-                  <img src="../img/file-line.png" alt="">
-                </div>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- RECENT FILES BOX -->
-       <section class="file-box">
-         <div class="recent-file">
-          <div class="recent-file-title">
-            <h2>Recent File</h2>
-            <p>View All</p>
-          </div>
-          <!-- MEMBERS -->
-          <div class="members">
-          
-            <!-- MEMBER FILES -->
-            <div class="member-files">
-              <div class="file">
-                <div class="table-head">
-                <h3>Name</h3>
-                <img src="../img/arrow-up.svg" alt="">
-              </div>
-                <div class="file-uploaded">
-                  <div class="upload">
-                    <img src="../img/proposal.png" alt="">
-                    <h3>Proposal.docx</h3>
-                  </div>
-                  <div class="upload">
-                    <img src="../img/background.png" alt="">
-                    <h3>Background.jpg</h3>
-                  </div>
-                  <div class="upload">
-                    <img src="../img/Apex.png" alt="">
-                    <h3>Apex website.fig</h3>
-                  </div>
-                  <div class="upload">
-                    <img src="../img/illustration.png" alt="">
-                    <h3>Illustration AI</h3>
-                  </div>
-                </div>
-              </div>
-              <!-- SIZE -->
-              <div class="size">
-                <div class="table-head">
-                <h3>Size</h3>
-                <img src="../img/arrow-up.svg" alt="">
-              </div>
-              <div class="size-text">
-                <h3>2.9MB</h3>
-                <h3>3.5MB</h3>
-                <h3>23.5MB</h3>
-                <h3>7.2MB</h3>
-              </div>
-              </div>
-              <!-- MODIFIED -->
-              <div class="modified">
-                <div class="table-head">
-                <h3>Last modified</h3>
-                <img src="../img/arrow-up.svg" alt="">
-              </div>
-              <div class="modified-text">
-                <h3>Feb 25,2022</h3>
-                <h3>Feb 24,2022</h3>
-                <h3>Feb 22,2022</h3>
-                <h3>Feb 20,2022</h3>
-              </div>
-              </div>
-              <!-- MEMBERS PIC -->
-               <div class="members-pic">
-                <div class="table-head">
-                <h3>Member</h3>
-                <img src="../img/arrow-up.svg" alt="">
-              </div>
-              <div class="member-img">
-                <img src="../img/member1.png" alt="" class="img1">
-                <img src="../img/member2.png" alt="" class="img2">
-                <img src="../img/member1.png" alt="" class="img1">
-                <img src="../img/member3.png" alt="" class="img2">
-              </div>
-            </div>
-            </div>
-          </div>
-         </div>
-         <!-- ACTIVITY CHAT -->
-         <div class="chart">
-          <div class="activity-text">
-            <h2>Activity Chart</h2>
-          </div>
-          <div class="chart-img">
-            <img src="../img/chart.png" alt="">
-          </div>
-         </div>
+                <div class="right-column">
+                    
+                    <div class="card storage-card">
+                        <div class="storage-top">
+                            <div class="donut-chart">
+                                <div class="inner-circle">85%</div>
+                            </div>
+                            <div class="storage-info">
+                                <h4>Available Storage</h4>
+                                <p>130GB / 512GB</p>
+                            </div>
+                        </div>
+                        <div class="storage-list">
+                            <div class="storage-item">
+                                <div class="item-icon bg-blue-light"><i class='bx bxs-image text-blue'></i></div>
+                                <div class="item-details">
+                                    <div class="item-title">
+                                        <span>Media</span>
+                                        <span>86 GB</span>
+                                    </div>
+                                    <div class="progress-bar"><div class="fill bg-blue" style="width: 70%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="storage-item">
+                                <div class="item-icon bg-yellow-light"><i class='bx bxs-file-doc text-yellow'></i></div>
+                                <div class="item-details">
+                                    <div class="item-title">
+                                        <span>Documents</span>
+                                        <span>26 GB</span>
+                                    </div>
+                                    <div class="progress-bar"><div class="fill bg-yellow" style="width: 30%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="storage-item">
+                                <div class="item-icon bg-red-light"><i class='bx bxs-music text-red'></i></div>
+                                <div class="item-details">
+                                    <div class="item-title">
+                                        <span>Music</span>
+                                        <span>10 GB</span>
+                                    </div>
+                                    <div class="progress-bar"><div class="fill bg-red" style="width: 15%;"></div></div>
+                                </div>
+                            </div>
+                            <div class="storage-item">
+                                <div class="item-icon bg-cyan-light"><i class='bx bxs-file text-cyan'></i></div>
+                                <div class="item-details">
+                                    <div class="item-title">
+                                        <span>Other File</span>
+                                        <span>13 GB</span>
+                                    </div>
+                                    <div class="progress-bar"><div class="fill bg-cyan" style="width: 20%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-       </section>
+                    <div class="card activity-card">
+                        <h2>Activity Chart</h2>
+                        <div class="chart-container">
+                            <div class="grid-lines">
+                                <div></div><div></div><div></div><div></div>
+                            </div>
+                            <div class="bars">
+                                <div class="bar-group">
+                                    <div class="bar bg-red" style="height: 30%;"></div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar bg-blue" style="height: 70%;"></div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar bg-purple" style="height: 45%;"></div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar bg-red" style="height: 80%;"></div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar bg-purple" style="height: 60%;"></div>
+                                </div>
+                                <div class="bar-group">
+                                    <div class="bar bg-cyan" style="height: 65%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chart-legend">
+                            <span><span class="dot bg-purple"></span> Media</span>
+                            <span><span class="dot bg-cyan"></span> Photos</span>
+                            <span><span class="dot bg-red"></span> Docs</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
     </div>
-    </div>
-    </main>
+    <script src="../javascript/task.js"></script>
 </body>
 </html>
