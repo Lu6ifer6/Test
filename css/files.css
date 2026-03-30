@@ -7,6 +7,7 @@
     --primary-blue: #4318ff;
     --light-blue: #e9edfd;
     --border-color: #e2e8f0;
+    --sidebar-bg: #FBFAFF;
     
     /* Folder Colors */
     --f-blue: #3b82f6;
@@ -38,7 +39,7 @@ body {
 /* ---- Sidebar ---- */
 .sidebar {
     width: 90px;
-    background-color: var(--bg-color);
+    background-color: var(--sidebar-bg);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,18 +65,31 @@ body {
     gap: 25px;
     width: 100%;
     align-items: center;
+    padding-top: 40px;
 }
 
 .nav-item {
     font-size: 24px;
     text-decoration: none;
-    transition: all 0.2s;
     width: 50px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 14px;
+    transition: all 0.2s ease;
+}
+
+.nav-item img:hover {  
+  background-color: #0f78e2;
+  border-radius: 5px;
+  transform: translateX(5px);
+  padding: 0.5rem;
+}
+
+.nav-item img:active {
+  background-color: #0f78e2;
+  transform: translateX(5px);
 }
 
 
@@ -376,20 +390,25 @@ body {
 .file-name .pink { color: #ec4899; }
 .file-name .dark { color: #333; }
 
-.member-group { display: flex; }
+.member-group { 
+  display: flex; 
+}
+
 .member-group img {
-    width: 28px; height: 28px;
-    border-radius: 50%; border: 2px solid white;
+    width: 28px; 
+    height: 28px;
+    border-radius: 50%; 
+    border: 2px solid white;
     margin-left: -8px;
 }
 .member-group img:first-child { margin-left: 0; }
 
 /* ---- Right Column ---- */
-.card {
+.storage-card {
     background: white;
     border-radius: 20px;
     padding: 24px;
-    margin-bottom: 30px;
+    height: 420px;
     margin-top: 70px;
 }
 
@@ -401,54 +420,49 @@ body {
     margin-bottom: 30px;
 }
 
-.donut-chart {
-    width: 80px; height: 80px;
-    border-radius: 50%;
-    background: conic-gradient(var(--f-cyan) 85%, var(--light-blue) 0);
-    display: flex; justify-content: center; align-items: center;
-}
-
-.inner-circle {
-    width: 60px; height: 60px;
-    background: white;
-    border-radius: 50%;
-    display: flex; justify-content: center; align-items: center;
-    font-weight: 700; font-size: 16px;
-}
 
 .storage-info h4 { font-size: 14px; margin-bottom: 4px; }
 .storage-info p { font-size: 12px; color: var(--text-muted); }
 
-.storage-list { display: flex; flex-direction: column; gap: 20px; }
+.storage-list { display: flex; 
+  flex-direction: column; 
+  gap: 20px; }
 
 .storage-item {
-    display: flex; align-items: center; gap: 15px;
+    display: flex; 
+    align-items: center; 
+    gap: 15px;
 }
 
 .item-icon {
     width: 40px; height: 40px;
     border-radius: 10px;
-    display: flex; justify-content: center; align-items: center; font-size: 20px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 20px;
 }
-.bg-blue-light { background: #eff6ff; }
-.text-blue { color: var(--f-blue); }
-.bg-yellow-light { background: #fefce8; }
-.text-yellow { color: var(--f-yellow); }
-.bg-red-light { background: #fef2f2; }
-.text-red { color: var(--f-red); }
-.bg-cyan-light { background: #ecfeff; }
-.text-cyan { color: var(--f-cyan); }
 
-.item-details { flex: 1; }
+
+.item-details { 
+  flex: 1; 
+}
+
 .item-title {
-    display: flex; justify-content: space-between;
-    font-size: 13px; font-weight: 500; margin-bottom: 8px;
+    display: flex; 
+    justify-content: space-between;
+    font-size: 13px; 
+    font-weight: 500; 
+    margin-bottom: 8px;
 }
 
 .progress-bar {
     width: 100%; height: 6px; background: var(--light-blue); border-radius: 3px;
 }
-.fill { height: 100%; border-radius: 3px; }
+.fill { height: 100%; 
+  border-radius: 3px; 
+}
+
 .bg-blue { background: var(--f-blue); }
 .bg-yellow { background: var(--f-yellow); }
 .bg-red { background: var(--f-red); }
@@ -456,7 +470,17 @@ body {
 .bg-purple { background: var(--f-purple); }
 
 /* Activity Chart */
-.activity-card h2 { font-size: 18px; margin-bottom: 24px; }
+.activity-card {
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    height: 390px;
+    margin-top: 32px;
+}
+
+.activity-card h2 { font-size: 18px; 
+  margin-bottom: 24px; 
+}
 
 .chart-container {
     height: 150px; 
