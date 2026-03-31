@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="../css/messages.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
 </head>
 <body>
     <div class="app-container">
@@ -16,16 +17,15 @@
 
         <aside class="app-sidebar" id="appSidebar">
             <div class="logo">
-                <div class="logo-icon"><i class='bx bxl-codepen'></i></div>
-                <span class="logo-text">OCTOM.</span>
+                <a href="../index.html"><img src="../img/logo.png" alt="logo image"></a>
             </div>
-            <nav class="app-nav">
-                <a href="#" class="nav-item"><i class='bx bx-grid-alt'></i></a>
-                <a href="#" class="nav-item"><i class='bx bx-pin'></i></a>
-                <a href="#" class="nav-item"><i class='bx bx-book-open'></i></a>
-                <a href="#" class="nav-item"><i class='bx bx-cog'></i></a>
-                <a href="#" class="nav-item active"><i class='bx bx-send'></i></a>
-                <a href="#" class="nav-item"><i class='bx bx-folder'></i></a>
+            <nav class="nav-menu">
+                <a href="../html/dashboard.html" class="nav-item"><img src="../img/dashboard-icon.svg" alt=""></a>
+                <a href="#" class="nav-item"><img src="../img/timeline.svg" alt=""></a>
+                <a href="#" class="nav-item"><img src="../img/task.svg" alt=""></a>
+                <a href="../html/settings.html" class="nav-item"><img src="../img/settings.svg" alt=""></a>
+                <a href="../html/messages.html" class="nav-item"><img src="../img/messages.svg" alt=""></a>
+                <a href="../html/files.html" class="nav-item"><img src="../img/folder.svg" alt=""></a>
             </nav>
         </aside>
 
@@ -42,10 +42,10 @@
                 <div class="header-right">
                     <div class="notification-bell">
                         <i class='bx bx-bell'></i>
-                        <span class="badge badge-blue">1</span>
+                        <span class="badge badge-blue">4</span>
                     </div>
                     <div class="user-profile">
-                        <img src="https://i.pravatar.cc/150?img=11" alt="Current User">
+                        <img src="../img/profile-avatar.svg" alt="Current User">
                         <i class='bx bx-chevron-down'></i>
                     </div>
                 </div>
@@ -65,7 +65,7 @@
                     <div class="chat-list">
                         <div class="chat-item">
                             <div class="avatar-wrapper">
-                                <img src="https://i.pravatar.cc/150?img=12" alt="Killan" class="avatar">
+                                <img src="../img/killian.png" alt="Killan" class="avatar">
                                 <span class="status-indicator online"></span>
                             </div>
                             <div class="chat-details">
@@ -82,8 +82,8 @@
 
                         <div class="chat-item active">
                             <div class="avatar-wrapper group-avatar">
-                                <img src="https://i.pravatar.cc/150?img=12" alt="A" class="avatar-sm top-left">
-                                <img src="https://i.pravatar.cc/150?img=32" alt="B" class="avatar-sm bottom-right">
+                                <img src="../img/design.png" alt="A" class="avatar-sm top-left">
+                                <img src="../img/design.png" alt="B" class="avatar-sm bottom-right">
                             </div>
                             <div class="chat-details">
                                 <div class="chat-top">
@@ -99,7 +99,7 @@
 
                         <div class="chat-item">
                             <div class="avatar-wrapper">
-                                <img src="https://i.pravatar.cc/150?img=14" alt="Ahmed" class="avatar">
+                                <img src="../img/ahmed.png" alt="Ahmed" class="avatar">
                             </div>
                             <div class="chat-details">
                                 <div class="chat-top">
@@ -118,7 +118,7 @@
 
                         <div class="chat-item">
                             <div class="avatar-wrapper">
-                                <img src="https://i.pravatar.cc/150?img=5" alt="Claudia" class="avatar">
+                                <img src="../img/claudia.png" alt="Claudia" class="avatar">
                             </div>
                             <div class="chat-details">
                                 <div class="chat-top">
@@ -133,7 +133,7 @@
                         
                         <div class="chat-item">
                             <div class="avatar-wrapper">
-                                <img src="https://i.pravatar.cc/150?img=8" alt="Novita" class="avatar">
+                                <img src="../img/Novita.png" alt="Novita" class="avatar">
                                 <span class="status-indicator online"></span>
                             </div>
                             <div class="chat-details">
@@ -154,7 +154,7 @@
                     <div class="chat-area-header">
                         <div class="chat-title-info">
                             <div class="group-avatar-lg">
-                                <img src="https://i.pravatar.cc/150?img=12" alt="Design Team">
+                                <img src="../img/Novita.png" alt="Design Team">
                             </div>
                             <div class="title-text">
                                 <h2>Design Team</h2>
@@ -163,9 +163,9 @@
                         </div>
                         <div class="chat-header-actions">
                             <div class="overlapping-avatars">
-                                <img src="https://i.pravatar.cc/150?img=12" alt="M1">
-                                <img src="https://i.pravatar.cc/150?img=32" alt="M2">
-                                <img src="https://i.pravatar.cc/150?img=14" alt="M3">
+                                <img src="../img/ahmed.png" alt="M1">
+                                <img src="../img/killian.png" alt="M2">
+                                <img src="../img/claudia.png" alt="M3">
                                 <button class="add-user-btn"><i class='bx bx-plus'></i></button>
                             </div>
                             <button class="toggle-details-btn" id="toggleDetailsBtn"><i class='bx bx-info-circle'></i></button>
@@ -174,7 +174,7 @@
 
                     <div class="messages-feed" id="messagesFeed">
                         <div class="message-row received">
-                            <img src="https://i.pravatar.cc/150?img=12" alt="Killan" class="msg-avatar">
+                            <img src="../img/killian.png" alt="Killan" class="msg-avatar">
                             <div class="msg-content">
                                 <div class="msg-meta">
                                     <span class="msg-name">Killan James</span>
@@ -189,7 +189,7 @@
                         <div class="date-divider"><span>Today, March 24</span></div>
 
                         <div class="message-row received">
-                            <img src="https://i.pravatar.cc/150?img=5" alt="Claudia" class="msg-avatar">
+                            <img src="../img/claudia.png" alt="Claudia" class="msg-avatar">
                             <div class="msg-content">
                                 <div class="msg-meta">
                                     <span class="msg-name">Claudia Maudi</span>
@@ -198,8 +198,8 @@
                                 <div class="msg-bubble">Hey, happy to hear from you. Yes, I will be back in a couple fo days.</div>
                                 <div class="msg-bubble">Here are some Design i took earlier today.</div>
                                 <div class="msg-images">
-                                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=300&h=400&fit=crop" alt="UI Design 1">
-                                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=300&h=400&fit=crop" alt="UI Design 2">
+                                    <img src="../img/ui1.png" alt="UI Design 1">
+                                    <img src="../img/ui2.png" alt="UI Design 2">
                                 </div>
                             </div>
                             <i class='bx bx-dots-vertical-rounded msg-options'></i>
@@ -214,7 +214,7 @@
                                 </div>
                                 <div class="msg-bubble primary">Great 🔥 That's a nice design Idea. 🤩🍬</div>
                             </div>
-                            <img src="https://i.pravatar.cc/150?img=60" alt="Dristin" class="msg-avatar">
+                            <img src="../img/dristin.png" alt="Dristin" class="msg-avatar">
                         </div>
                     </div>
 
@@ -234,7 +234,7 @@
 
                 <aside class="details-sidebar" id="detailsSidebar">
                     <div class="profile-card">
-                        <img src="https://i.pravatar.cc/150?img=11" alt="Killan James" class="profile-img-lg">
+                        <img src="../img/killian.png" alt="Killan James" class="profile-img-lg">
                         <h3>Killan James</h3>
                         <p>@killan.james</p>
                     </div>
@@ -285,19 +285,19 @@
                         <button class="add-member-btn"><i class='bx bx-plus'></i> Add Member</button>
                         <div class="members-list">
                             <div class="member-item">
-                                <img src="https://i.pravatar.cc/150?img=8" alt="Novita">
+                                <img src="../img/Novita.png" alt="Novita">
                                 <span>Novita</span>
                             </div>
                             <div class="member-item">
-                                <img src="https://i.pravatar.cc/150?img=31" alt="Milie Nose">
+                                <img src="../img/Millie.png" alt="Milie Nose">
                                 <span>Milie Nose</span>
                             </div>
                             <div class="member-item">
-                                <img src="https://i.pravatar.cc/150?img=15" alt="Ikhsan SD">
+                                <img src="../img/ikshan.png" alt="Ikhsan SD">
                                 <span>Ikhsan SD</span>
                             </div>
                             <div class="member-item">
-                                <img src="https://i.pravatar.cc/150?img=60" alt="Aditya">
+                                <img src="../img/aditya.png" alt="Aditya">
                                 <span>Aditya</span>
                             </div>
                         </div>
@@ -307,6 +307,6 @@
             </div>
         </div>
     </div>
-    <script src="./settings.js"></script>
+    <script src="../javascript/messages.js"></script>
 </body>
 </html>
