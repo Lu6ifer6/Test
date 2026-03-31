@@ -546,6 +546,11 @@ i.read-receipt {
     width: 6px; 
 }
 
+.messages-feed::-webkit-scrollbar-thumb { 
+    background: #D1D5DB; 
+    border-radius: 6px; 
+}
+
 .date-divider { 
     display: flex; 
     justify-content: center; 
