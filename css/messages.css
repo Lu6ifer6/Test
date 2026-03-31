@@ -1,0 +1,111 @@
+:root {
+    --bg-app: #F4F7FE;
+    --bg-white: #FFFFFF;
+    --primary: #5A67D8; /* Blue/Purple for sent messages */
+    --primary-light: #EEEDFF;
+    --text-dark: #1F2937;
+    --text-muted: #6B7280;
+    --text-light: #9CA3AF;
+    --border-color: #E5E7EB;
+    --sidebar-color: #FBFAFF;
+    
+    --online-color: #10B981;
+    --unread-color: #EF4444;
+    
+    --sidebar-app-width: 80px;
+    --sidebar-msg-width: 320px;
+    --sidebar-details-width: 300px;
+    
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-app);
+    color: var(--text-dark);
+    overflow: hidden;
+    height: 100vh;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.app-container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.main-workspace {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.content-body {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.app-sidebar {
+    width: var(--sidebar-app-width);
+    background-color: var(--sidebar-color);
+    border-right: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0px;
+    z-index: 50;
+    transition: transform 0.3s ease;
+}
+
+.app-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.nav-item {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: var(--text-muted);
+    transition: 0.2s;
+}
+
+.nav-item:hover {
+    color: var(--primary);
+    background: var(--primary-light);
+}
+
+/* Header */
+.top-header {
+    height: 70px;
+    background-color: var(--bg-white);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

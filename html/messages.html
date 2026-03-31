@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octom. Messaging Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/messages.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <aside class="app-sidebar" id="appSidebar">
+            <div class="logo">
+                <div class="logo-icon"><i class='bx bxl-codepen'></i></div>
+                <span class="logo-text">OCTOM.</span>
+            </div>
+            <nav class="app-nav">
+                <a href="#" class="nav-item"><i class='bx bx-grid-alt'></i></a>
+                <a href="#" class="nav-item"><i class='bx bx-pin'></i></a>
+                <a href="#" class="nav-item"><i class='bx bx-book-open'></i></a>
+                <a href="#" class="nav-item"><i class='bx bx-cog'></i></a>
+                <a href="#" class="nav-item active"><i class='bx bx-send'></i></a>
+                <a href="#" class="nav-item"><i class='bx bx-folder'></i></a>
+            </nav>
+        </aside>
+
+        <div class="main-workspace">
+            
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="hamburger-btn" id="hamburgerBtn"><i class='bx bx-menu'></i></button>
+                </div>
+                <div class="search-bar">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search anything...">
+                </div>
+                <div class="header-right">
+                    <div class="notification-bell">
+                        <i class='bx bx-bell'></i>
+                        <span class="badge badge-blue">1</span>
+                    </div>
+                    <div class="user-profile">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Current User">
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                </div>
+            </header>
+
+            <div class="content-body">
+                
+                <aside class="messages-sidebar" id="messagesSidebar">
+                    <div class="messages-header">
+                        <h2>Messages</h2>
+                        <div class="local-search">
+                            <i class='bx bx-search'></i>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </div>
+                    
+                    <div class="chat-list">
+                        <div class="chat-item">
+                            <div class="avatar-wrapper">
+                                <img src="https://i.pravatar.cc/150?img=12" alt="Killan" class="avatar">
+                                <span class="status-indicator online"></span>
+                            </div>
+                            <div class="chat-details">
+                                <div class="chat-top">
+                                    <h4>Killan James</h4>
+                                    <span class="time">4:30 PM</span>
+                                </div>
+                                <div class="chat-bottom">
+                                    <span class="preview typing">Typing...</span>
+                                    <span class="unread-badge">2</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-item active">
+                            <div class="avatar-wrapper group-avatar">
+                                <img src="https://i.pravatar.cc/150?img=12" alt="A" class="avatar-sm top-left">
+                                <img src="https://i.pravatar.cc/150?img=32" alt="B" class="avatar-sm bottom-right">
+                            </div>
+                            <div class="chat-details">
+                                <div class="chat-top">
+                                    <h4>Design Team</h4>
+                                    <span class="time">9:36 AM</span>
+                                </div>
+                                <div class="chat-bottom">
+                                    <span class="preview">Hello! Everyone</span>
+                                    <i class='bx bx-check-double read-receipt'></i>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chat-item">
+                            <div class="avatar-wrapper">
+                                <img src="https://i.pravatar.cc/150?img=14" alt="Ahmed" class="avatar">
+                            </div>
+                            <div class="chat-details">
+                                <div class="chat-top">
+                                    <h4>Ahmed Medi</h4>
+                                    <span class="time">1:15 AM</span>
+                                </div>
+                                <div class="chat-bottom">
+                                    <span class="preview">Wow really Cool 🔥</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="section-divider">
+                            <i class='bx bx-message-rounded-dots'></i> All Message
+                        </div>
+
+                        <div class="chat-item">
+                            <div class="avatar-wrapper">
+                                <img src="https://i.pravatar.cc/150?img=5" alt="Claudia" class="avatar">
+                            </div>
+                            <div class="chat-details">
+                                <div class="chat-top">
+                                    <h4>Claudia Maudi</h4>
+                                    <span class="time">4:30 PM</span>
+                                </div>
+                                <div class="chat-bottom">
+                                    <span class="preview typing">Typing...</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="chat-item">
+                            <div class="avatar-wrapper">
+                                <img src="https://i.pravatar.cc/150?img=8" alt="Novita" class="avatar">
+                                <span class="status-indicator online"></span>
+                            </div>
+                            <div class="chat-details">
+                                <div class="chat-top">
+                                    <h4>Novita</h4>
+                                    <span class="time">4:30 PM</span>
+                                </div>
+                                <div class="chat-bottom">
+                                    <span class="preview">yah, nice design</span>
+                                    <span class="unread-badge">2</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+                <main class="chat-area">
+                    <div class="chat-area-header">
+                        <div class="chat-title-info">
+                            <div class="group-avatar-lg">
+                                <img src="https://i.pravatar.cc/150?img=12" alt="Design Team">
+                            </div>
+                            <div class="title-text">
+                                <h2>Design Team</h2>
+                                <span>60 member, 10 online</span>
+                            </div>
+                        </div>
+                        <div class="chat-header-actions">
+                            <div class="overlapping-avatars">
+                                <img src="https://i.pravatar.cc/150?img=12" alt="M1">
+                                <img src="https://i.pravatar.cc/150?img=32" alt="M2">
+                                <img src="https://i.pravatar.cc/150?img=14" alt="M3">
+                                <button class="add-user-btn"><i class='bx bx-plus'></i></button>
+                            </div>
+                            <button class="toggle-details-btn" id="toggleDetailsBtn"><i class='bx bx-info-circle'></i></button>
+                        </div>
+                    </div>
+
+                    <div class="messages-feed" id="messagesFeed">
+                        <div class="message-row received">
+                            <img src="https://i.pravatar.cc/150?img=12" alt="Killan" class="msg-avatar">
+                            <div class="msg-content">
+                                <div class="msg-meta">
+                                    <span class="msg-name">Killan James</span>
+                                    <span class="msg-time">10:12 AM</span>
+                                </div>
+                                <div class="msg-bubble">Hi, Are you still Web Designer.</div>
+                                <div class="msg-bubble">would love to see some Design 🤩</div>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded msg-options'></i>
+                        </div>
+
+                        <div class="date-divider"><span>Today, March 24</span></div>
+
+                        <div class="message-row received">
+                            <img src="https://i.pravatar.cc/150?img=5" alt="Claudia" class="msg-avatar">
+                            <div class="msg-content">
+                                <div class="msg-meta">
+                                    <span class="msg-name">Claudia Maudi</span>
+                                    <span class="msg-time">10:30 AM</span>
+                                </div>
+                                <div class="msg-bubble">Hey, happy to hear from you. Yes, I will be back in a couple fo days.</div>
+                                <div class="msg-bubble">Here are some Design i took earlier today.</div>
+                                <div class="msg-images">
+                                    <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=300&h=400&fit=crop" alt="UI Design 1">
+                                    <img src="https://images.unsplash.com/photo-1626785774573-4b799315345d?w=300&h=400&fit=crop" alt="UI Design 2">
+                                </div>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded msg-options'></i>
+                        </div>
+
+                        <div class="message-row sent">
+                            <i class='bx bx-dots-vertical-rounded msg-options'></i>
+                            <div class="msg-content">
+                                <div class="msg-meta">
+                                    <span class="msg-time">10:30 AM</span>
+                                    <span class="msg-name">Dristin Watson</span>
+                                </div>
+                                <div class="msg-bubble primary">Great 🔥 That's a nice design Idea. 🤩🍬</div>
+                            </div>
+                            <img src="https://i.pravatar.cc/150?img=60" alt="Dristin" class="msg-avatar">
+                        </div>
+                    </div>
+
+                    <div class="message-input-area">
+                        <div class="input-container">
+                            <button class="icon-btn"><i class='bx bx-microphone'></i></button>
+                            <input type="text" id="messageInput" placeholder="Add a comment...">
+                            <div class="input-actions">
+                                <button class="icon-btn"><i class='bx bx-image-add'></i></button>
+                                <button class="icon-btn"><i class='bx bx-smile'></i></button>
+                                <button class="icon-btn" id="sendBtn"><i class='bx bx-paper-plane'></i></button>
+                                <button class="icon-btn"><i class='bx bx-map'></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+
+                <aside class="details-sidebar" id="detailsSidebar">
+                    <div class="profile-card">
+                        <img src="https://i.pravatar.cc/150?img=11" alt="Killan James" class="profile-img-lg">
+                        <h3>Killan James</h3>
+                        <p>@killan.james</p>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="section-header">
+                            <h4>Attachments</h4>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                        <div class="attachment-list">
+                            <div class="attachment-item">
+                                <div class="file-icon figma"><i class='bx bxl-figma'></i></div>
+                                <div class="file-info">
+                                    <span class="file-name">Very important file.figma</span>
+                                    <span class="file-size">7.5 MB 3.22.22, 11:15 AM</span>
+                                </div>
+                            </div>
+                            <div class="attachment-item">
+                                <div class="file-icon sketch"><i class='bx bxs-diamond'></i></div>
+                                <div class="file-info">
+                                    <span class="file-name">Some file. scratch</span>
+                                    <span class="file-size">7.5 MB 3.22.22, 11:15 AM</span>
+                                </div>
+                            </div>
+                            <div class="attachment-item">
+                                <div class="file-icon xd"><i class='bx bxl-adobe'></i></div>
+                                <div class="file-info">
+                                    <span class="file-name">List of someting. xd</span>
+                                    <span class="file-size">7.5 MB 3.22.22, 11:15 AM</span>
+                                </div>
+                            </div>
+                            <div class="attachment-item">
+                                <div class="file-icon svg"><i class='bx bxs-file-archive'></i></div>
+                                <div class="file-info">
+                                    <span class="file-name">Very important file.svg</span>
+                                    <span class="file-size">7.5 MB 3.22.22, 11:15 AM</span>
+                                </div>
+                            </div>
+                            <a href="#" class="view-all-link">View all</a>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-section">
+                        <div class="section-header">
+                            <h4>Members</h4>
+                            <i class='bx bx-chevron-down'></i>
+                        </div>
+                        <button class="add-member-btn"><i class='bx bx-plus'></i> Add Member</button>
+                        <div class="members-list">
+                            <div class="member-item">
+                                <img src="https://i.pravatar.cc/150?img=8" alt="Novita">
+                                <span>Novita</span>
+                            </div>
+                            <div class="member-item">
+                                <img src="https://i.pravatar.cc/150?img=31" alt="Milie Nose">
+                                <span>Milie Nose</span>
+                            </div>
+                            <div class="member-item">
+                                <img src="https://i.pravatar.cc/150?img=15" alt="Ikhsan SD">
+                                <span>Ikhsan SD</span>
+                            </div>
+                            <div class="member-item">
+                                <img src="https://i.pravatar.cc/150?img=60" alt="Aditya">
+                                <span>Aditya</span>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+
+            </div>
+        </div>
+    </div>
+    <script src="./settings.js"></script>
+</body>
+</html>
