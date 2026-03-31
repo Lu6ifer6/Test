@@ -541,7 +541,9 @@ i.read-receipt {
     gap: 24px; 
 }
 
-.messages-feed::-webkit-scrollbar { width: 6px; }
+.messages-feed::-webkit-scrollbar { 
+    width: 6px; 
+}
 
 .date-divider { 
     display: flex; 
