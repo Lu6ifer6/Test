@@ -6,6 +6,7 @@
     --text-muted: #6B7280;
     --text-light: #9CA3AF;
     --border-color: #E5E7EB;
+    --sidebar-bg: #FBFAFF;
     
     /* Brand Colors */
     --primary-blue: #0284C7;
@@ -54,7 +55,7 @@ button { cursor: pointer; border: none; background: none; }
 /* ---- Left Sidebar ---- */
 .sidebar {
     width: var(--sidebar-width);
-    background-color: var(--bg-white);
+    background-color: var(--sidebar-bg);
     border-right: 1px solid var(--border-color);
     display: flex;
     flex-direction: column;
@@ -87,18 +88,19 @@ button { cursor: pointer; border: none; background: none; }
     align-items: center;
     font-size: 24px; 
     color: var(--text-muted); 
-    transition: 0.2s;
+    transition: all 0.2s;
 }
 
-.nav-item:hover { 
-    color: var(--indigo); 
-    background: var(--indigo-light); 
+.nav-item img:hover {  
+  background-color: #0f78e2;
+  border-radius: 5px;
+  transform: translateX(5px);
+  padding: 0.5rem;
 }
 
-.nav-item.active { 
-    background: var(--indigo); 
-    color: white; 
-    box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3); 
+.nav-item img:active {
+  background-color: #0f78e2;
+  transform: translateX(5px);
 }
 
 /* ---- Main Content ---- */
