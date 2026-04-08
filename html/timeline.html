@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octom Timeline Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/timeline.css">
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <a href="../index.html"><img src="../img/logo.png" alt="logo image"></a>
+            </div>
+            <nav class="nav-menu">
+                <a href="../html/dashboard.html" class="nav-item"><img src="../img/dashboard-icon.svg" alt=""></a>
+                <a href="../html/timeline.html" class="nav-item"><img src="../img/timeline.svg" alt=""></a>
+                <a href="#" class="nav-item"><img src="../img/task.svg" alt=""></a>
+                <a href="../html/settings.html" class="nav-item"><img src="../img/settings.svg" alt=""></a>
+                <a href="../html/messages.html" class="nav-item"><img src="../img/messages.svg" alt=""></a>
+                <a href="../html/files.html" class="nav-item"><img src="../img/folder.svg" alt=""></a>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-left">
+                    <button class="hamburger-btn" id="hamburgerBtn"><i class='bx bx-menu'></i></button>
+                </div>
+                
+                <div class="search-bar">
+                    <i class='bx bx-search'></i>
+                    <input type="text" placeholder="Search anything...">
+                </div>
+
+                <div class="header-right">
+                    <div class="notification">
+                        <i class='bx bx-bell'></i>
+                        <span class="badge">2</span>
+                    </div>
+                    <div class="user-profile">
+                        <img src="../img/profile-avatar.svg" alt="User">
+                        <i class='bx bx-chevron-down'></i>
+                    </div>
+                </div>
+            </header>
+
+            <div class="timeline-board">
+                <div class="board-header">
+                    <div class="header-title">
+                        <h1>Timeline</h1>
+                        <div class="date-controls">
+                            <button class="btn-today">Today</button>
+                            <div class="date-selector">
+                                <i class='bx bx-chevron-left'></i>
+                                <span>June, 20, 2022</span>
+                                <i class='bx bx-chevron-right'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header-actions">
+                        <button class="btn-invite">+ Invite</button>
+                        <div class="avatar-group">
+                            <img src="../img/Charlie.png" alt="U1">
+                            <img src="../img/ikshan.png" alt="U2">
+                            <div class="avatar-more">+5</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-container">
+                    
+                    <div class="task-categories">
+                        <div class="category-header-spacer"></div> <div class="category-card">
+                            <div class="cat-info">
+                                <i class='bx bxs-plus-square text-blue'></i>
+                                <span>UX Research</span>
+                            </div>
+                            <div class="cat-meta">
+                                <div class="avatar-group-sm">
+                                    <img src="../img/Charlie.png" alt="U1">
+                                    <img src="../img/Charmie.png" alt="U2">
+                                </div>
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </div>
+                        </div>
+
+                        <div class="category-card">
+                            <div class="cat-info">
+                                <i class='bx bxs-plus-square text-indigo'></i>
+                                <span>Information Arc...</span>
+                            </div>
+                            <div class="cat-meta">
+                                <div class="avatar-group-sm">
+                                    <img src="../img/ikshan.png" alt="U1">
+                                    <div class="avatar-text bg-purple">R</div>
+                                </div>
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </div>
+                        </div>
+
+                        <div class="category-card expanded">
+                            <div class="cat-main">
+                                <div class="cat-info">
+                                    <i class='bx bx-minus-square text-gray'></i>
+                                    <span class="fw-bold">Design Phase</span>
+                                </div>
+                                <div class="cat-meta">
+                                    <div class="avatar-group-sm">
+                                        <img src="../img/claudia.png" alt="U1">
+                                        <div class="avatar-text bg-pink">S</div>
+                                    </div>
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                </div>
+                            </div>
+                            <div class="sub-tasks">
+                                <div class="sub-task">Build Wireframe</div>
+                                <div class="sub-task">User Interface D..</div>
+                            </div>
+                        </div>
+
+                        <div class="category-card">
+                            <div class="cat-info">
+                                <i class='bx bxs-plus-square text-orange'></i>
+                                <span>Phototyping</span>
+                            </div>
+                            <div class="cat-meta">
+                                <div class="avatar-group-sm">
+                                    <img src="../img/Jason.png" alt="U2">
+                                    <div class="avatar-text bg-blue-light text-blue">R</div>
+                                </div>
+                                <i class='bx bx-dots-horizontal-rounded'></i>
+                            </div>
+                        </div>
+
+                        <div class="category-card expanded">
+                            <div class="cat-main">
+                                <div class="cat-info">
+                                    <i class='bx bx-minus-square text-gray'></i>
+                                    <span class="fw-bold">Development</span>
+                                </div>
+                                <div class="cat-meta">
+                                    <div class="avatar-group-sm">
+                                        <img src="../img/Cris.png" alt="U1">
+                                        <div class="avatar-text bg-pink">S</div>
+                                    </div>
+                                    <i class='bx bx-dots-horizontal-rounded'></i>
+                                </div>
+                            </div>
+                            <div class="sub-tasks">
+                                <div class="sub-task">Back-End Dev..</div>
+                                <div class="sub-task">Front-End Dev..</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gantt-scroll-area">
+                        <div class="dates-header">
+                            <div>S 04</div><div>S 05</div><div>S 06</div><div>S 07</div>
+                            <div>S 04</div><div>S 05</div><div>S 06</div><div>S 07</div>
+                            <div>S 08</div><div>S 09</div><div>S 10</div><div>S 11</div>
+                            <div>S 12</div><div>S 13</div><div>S 14</div><div>S 15</div>
+                            <div>S 16</div><div>S 18</div><div>S 19</div><div>S 20</div>
+                            <div>S 21</div>
+                        </div>
+
+                        <div class="gantt-grid">
+                            <div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div>
+                            <div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div>
+                            <div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div>
+                            <div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div>
+                            <div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div><div class="grid-line"></div>
+                            <div class="grid-line"></div>
+                        </div>
+
+                        <div class="task-bars-container">
+                            
+                            <div class="task-row"></div>
+
+                            <div class="task-row">
+                                <div class="task-bar bg-indigo-light" style="grid-column: 6 / span 3;">
+                                    <div class="task-fill bg-indigo" style="width: 48%;">
+                                        <span class="task-label"><i class='bx bxs-circle'></i> Profile</span>
+                                    </div>
+                                    <div class="task-badge">48%</div>
+                                    <i class='bx bx-chevron-right arrow'></i>
+                                </div>
+                                <div class="task-bar bg-green-light" style="grid-column: 12 / span 3;">
+                                    <div class="task-fill bg-green" style="width: 54%;">
+                                        <span class="task-label"><i class='bx bxs-circle'></i> Menu</span>
+                                    </div>
+                                    <div class="task-badge">54%</div>
+                                    <i class='bx bx-chevron-right arrow'></i>
+                                </div>
+                                <div class="task-bar bg-blue-light" style="grid-column: 17 / span 4;">
+                                    <div class="task-fill bg-blue" style="width: 39%;">
+                                        <span class="task-label"><i class='bx bxs-circle'></i> Settings</span>
+                                    </div>
+                                    <div class="task-badge">39%</div>
+                                    <i class='bx bx-chevron-right arrow'></i>
+                                </div>
+                            </div>
+
+                            <div class="task-row">
+                                <div class="task-bar bg-green-light" style="grid-column: 5 / span 3;">
+                                    <div class="task-fill bg-green" style="width: 48%;">
+                                        <span class="task-label"><i class='bx bxs-circle'></i> Login</span>
+                                    </div>
+                                    <div class="task-badge">48%</div>
+                                    <i class='bx bx-chevron-right arrow'></i>
+                                </div>
+                                <div class="task-bar bg-orange-light" style="grid-column: 14 / span 3;">
+                                    <div class="task-fill bg-orange" style="width: 64%;">
+                                        <span class="task-label"><i class='bx bxs-circle'></i> Services</span>
+                                    </div>
+                                    <div class="task-badge">64%</div>
+                                    <i class='bx bx-chevron-right arrow'></i>
+                                </div>
+                            </div>
+
+                            <div class="task-row">
+                                <div class="task-bar bg-indigo-light task-clickable" style="grid-column: 10 / span 4;">
+                                    <div class="task-fill bg-indigo" style="width: 69%;">
+                                        <span class="task-label"><i class='bx bxs-circle'></i> Testimonials</span>
+                                    </div>
+                                    <div class="task-badge">69%</div>
+                                    <i class='bx bx-chevron-right arrow'></i>
+                                </div>
+                            </div>
+
+                            <div class="task-row">
+                                <div class="task-bar bg-orange-light" style="grid-column: 8 / span 4;">
+                                    <div class="task-fill bg-orange" style="width: 61%;">
+                                        <span class="task-label"><i class='bx bxs-circle'></i> Services</span>
+                                    </div>
+                                    <div class="task-badge">61%</div>
+                                    <i class='bx bx-chevron-right arrow'></i>
+                                </div>
+                                <div class="task-bar bg-green-light" style="grid-column: 16 / span 4;">
+                                    <div class="task-fill bg-green" style="width: 48%;">
+                                        <span class="task-label"><i class='bx bxs-circle'></i> Homepage</span>
+                                    </div>
+                                    <div class="task-badge">48%</div>
+                                    <i class='bx bx-chevron-right arrow'></i>
+                                </div>
+                            </div>
+
+                            <div class="task-row">
+                                <div class="task-bar bg-blue-light" style="grid-column: 7 / span 6;">
+                                    <div class="task-fill bg-blue" style="width: 63%;">
+                                        <span class="task-label"><i class='bx bxs-circle'></i> Our Portfolio</span>
+                                    </div>
+                                    <div class="task-badge">63%</div>
+                                    <i class='bx bx-chevron-right arrow'></i>
+                                </div>
+                            </div>
+
+                            <div class="task-row">
+                                <div class="task-bar bg-indigo-light" style="grid-column: 5 / span 3;">
+                                    <div class="task-fill bg-indigo" style="width: 48%;">
+                                        <span class="task-label"><i class='bx bxs-circle'></i> Profile</span>
+                                    </div>
+                                    <div class="task-badge">48%</div>
+                                    <i class='bx bx-chevron-right arrow'></i>
+                                </div>
+                            </div>
+
+                            <div class="task-row"></div>
+
+                            <div class="task-row">
+                                <div class="task-bar bg-orange-light" style="grid-column: 14 / span 3;">
+                                    <div class="task-fill bg-orange" style="width: 54%;">
+                                        <span class="task-label"><i class='bx bxs-circle'></i> Services</span>
+                                    </div>
+                                    <div class="task-badge">54%</div>
+                                    <i class='bx bx-chevron-right arrow'></i>
+                                </div>
+                            </div>
+
+                            <div class="task-popup" id="taskPopup">
+                                <h3>Complete Task</h3>
+                                <div class="graph-placeholder">
+                                    <svg viewBox="0 0 200 80" preserveAspectRatio="none">
+                                        <defs>
+                                            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#4F46E5" stop-opacity="0.3" />
+                                                <stop offset="100%" stop-color="#4F46E5" stop-opacity="0" />
+                                            </linearGradient>
+                                        </defs>
+                                        <path d="M10,60 C20,20 30,50 50,40 C60,30 70,60 90,40 C100,20 110,50 130,20 C150,10 170,40 190,10" fill="none" stroke="#4F46E5" stroke-width="3" stroke-linecap="round"/>
+                                        <path d="M10,60 C20,20 30,50 50,40 C60,30 70,60 90,40 C100,20 110,50 130,20 C150,10 170,40 190,10 L190,80 L10,80 Z" fill="url(#lineGrad)"/>
+                                        <circle cx="130" cy="20" r="4" fill="#4F46E5" stroke="white" stroke-width="2"/>
+                                        <line x1="130" y1="20" x2="130" y2="70" stroke="#E5E7EB" stroke-dasharray="3 3"/>
+                                    </svg>
+                                </div>
+                                <div class="graph-labels">
+                                    <span>67</span><span>73</span><span>53</span><span>47</span><span>39</span><span>27</span><span>27</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../javascript/timeline.js"></script>
+</body>
+</html>
